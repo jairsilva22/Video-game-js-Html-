@@ -15,16 +15,21 @@ if(window.innerHeight>window.innerWidth){
 }
 
  canvas.setAttribute('Width',canvasSize);
- 
  canvas.setAttribute('Height',canvasSize);
-
  const elementSize = canvasSize /10;
-
  game.font= elementSize +'px Verdana';
  game.position='end';
- game.fillText('💣',elementSize,elementSize);
 
+ for(let i =0; i<=10; i++){
 
+    for(let j=0; j<=10; j++){
+    game.fillText('💣',elementSize * i  ,elementSize * j);
+    canvasSize = canvasSize - elementSize;
+    console.log('elementSize ' + elementSize);
+    console.log(canvasSize);
+ }
+}
+game.fillText('💣',elementSize,elementSize);
 
 }
 
