@@ -16,11 +16,11 @@ if(window.innerHeight>window.innerWidth){
 
  canvas.setAttribute('Width',canvasSize);
  canvas.setAttribute('Height',canvasSize);
- const elementSize = canvasSize /10;
+ const elementSize = canvasSize /10.5;
  game.font= elementSize +'px Verdana';
  game.position='end';
 
- for(let i =0; i<=10; i++){
+ for(let i =0; i<=9; i++){
 
     for(let j=0; j<=10; j++){
     game.fillText('💣',elementSize * i  ,elementSize * j);
